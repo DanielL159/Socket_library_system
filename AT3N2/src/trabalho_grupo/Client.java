@@ -26,6 +26,9 @@ public class Client {
 						new BufferedInputStream(conexao.getInputStream()));
 				Scanner sc = new Scanner(System.in)) {
 
+					String mensagem = (String) ObjetoDeEntrada.readObject();
+					System.out.println("Mensagem do servidor: " + mensagem);
+
 			while (rodando) {
 				System.out.println("""
 						1. Listar livros
