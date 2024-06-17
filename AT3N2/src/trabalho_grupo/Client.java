@@ -7,6 +7,7 @@ import java.net.Socket;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
+import java.io.IOException;
 
 public class Client {
 	private static final String HOST_STRING = "localhost";
@@ -87,16 +88,18 @@ public class Client {
 
 	private static void Listar(ObjectOutputStream ObjetoDeSaida, ObjectInputStream ObjetoDeEntrada) {
 		try {
-			ObjetoDeSaida.writeObject("LISTAR");
+                    ObjetoDeSaida.writeObject("LISTAR");
 
-			@SuppressWarnings("unchecked")
-			List<Livros> livros = (List<Livros>) ObjetoDeEntrada.readObject();
-			for (Livros livro : livros) {
-				System.out.println(livro);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+                    @SuppressWarnings("unchecked")
+                    List<Livros> livros = (List<Livros>) ObjetoDeEntrada.readObject();
+                    for (Livros livro : livros) {
+                            System.out.println(livro);
+                    }
+		} catch (IOException e) {
+                    e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
 
 	}
 
