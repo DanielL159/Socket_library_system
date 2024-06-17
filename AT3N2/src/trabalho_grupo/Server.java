@@ -12,15 +12,15 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 
 public class Server {
     // Define the JSON_FILE variable
-    private static final String JSON_FILE = "Socket_library_system/AT3N2/src/trabalho_grupo/livros.json";
-
-    // Create a Gson object
-    private static final Gson gson = new Gson();
+    private static final String JSON_FILE = "src/livros.json";
 
     public static void main(String[] args) throws ClassNotFoundException {
         String mensagem_enviado_ao_Cliente = "Aguardando conexão com cliente";
@@ -72,12 +72,36 @@ public class Server {
                 }
             }
         } catch (IOException e) {
+            e.printStackTrace();
+            /*
             Type listType = new TypeToken<ArrayList<Livros>>() {
             }.getType();
+            */
         }
     }
 
     private static List<Livros> readBooksFromJson() {
+        JSONParser parser = new JSONParser();
+        
+        try (Reader reader = new FileReader(JSON_FILE)) {
+            Object obj = parser.parse(reader);
+            JSONArray bruteList = (JSONArray) obj;
+            List<Livros> refinedList = new ArrayList<>();
+            
+            bruteList.forEach(livro -> Livros.parseLivro((JSONObject) livro, refinedList));
+            for(Livros livro : refinedList) {
+                System.out.println(livro.getNome());
+            }
+            return refinedList;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new ArrayList<>();
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return new ArrayList<>();
+        }
+        
+        /*
         try (Reader reader = new FileReader(JSON_FILE)) {
             Type listType = new TypeToken<ArrayList<Livros>>() {
             }.getType();
@@ -86,14 +110,24 @@ public class Server {
             e.printStackTrace();
             return new ArrayList<>();
         }
+        */
     }
 
     private static void writeBooksToJson(List<Livros> livros) {
+        try (Writer writer = new FileWriter(JSON_FILE)) {
+            
+            writer.write(Livros.jsonizeList(livros).toJSONString());
+            writer.flush();
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+        /*
         try (Writer writer = new FileWriter(JSON_FILE)) {
             gson.toJson(livros, writer);
         } catch (IOException e) {
             e.printStackTrace();
         }
+        */
     }
 
     private static void cadastrarLivro(Livros livro) {
