@@ -1,5 +1,4 @@
-{
-  "livros": [
+ [
     {
       "titulo": "Meditações",
       "autor": "Marco Aurélio",
@@ -28,7 +27,7 @@
       "titulo": "Utopia",
       "autor": "Thomas More",
       "genero": "Filosofia",
-			"exemplares": 14
+		"exemplares": 14
     },
     {
       "titulo": "A Revolução dos Bichos",
@@ -52,7 +51,7 @@
       "titulo": "O Príncipe",
       "autor": "Nicolau Maquiavel",
       "genero": "Filosofia Política",
-			"exemplares": 1
+		"exemplares": 1
     },
     {
       "titulo": "O Guia do Mochileiro das Galáxias",
@@ -61,4 +60,4 @@
 			"exemplares": 10
     }
   ]
-}
+
