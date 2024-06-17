@@ -33,7 +33,7 @@
       "titulo": "A Revolução dos Bichos",
       "autor": "George Orwell",
       "genero": "Fábula Política",
-			"exemplares": 1
+			"exemplares": 2
     },
     {
       "titulo": "As Crônicas de Nárnia",
@@ -51,7 +51,7 @@
       "titulo": "O Príncipe",
       "autor": "Nicolau Maquiavel",
       "genero": "Filosofia Política",
-		"exemplares": 1
+		"exemplares": 2
     },
     {
       "titulo": "O Guia do Mochileiro das Galáxias",
@@ -60,4 +60,3 @@
 			"exemplares": 10
     }
   ]
-
