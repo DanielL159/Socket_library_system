@@ -20,13 +20,14 @@ public class Livros implements Serializable {
     private String nome;
     private String genero;
     private Integer quantidade;
+    private Integer quantMax;
 
     // static methods
     public static void parseLivro(JSONObject livro, List<Livros> livros) {
         String nome = (String) livro.get("titulo");
         String autor = (String) livro.get("autor");
         String genero = (String) livro.get("genero");
-        Integer quantidade = (Integer) livro.get("exemplares");
+        Integer quantidade = ((Long) livro.get("exemplares")).intValue();
         
         Livros book = new Livros(autor,nome,genero,quantidade);
         livros.add(book);
@@ -48,6 +49,7 @@ public class Livros implements Serializable {
         this.nome = nome;
         this.genero = genero;
         this.quantidade = quantidade;
+        this.quantMax = quantidade;
     }
 
     public String getAutor() {
@@ -76,6 +78,10 @@ public class Livros implements Serializable {
 
     public int getQuantidade() {
         return quantidade;
+    }
+    
+    public int getQuantMax() {
+        return quantMax;
     }
 
     public void setQuantidade(Integer quantidade) {
