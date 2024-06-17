@@ -20,9 +20,7 @@ import org.json.simple.JSONObject;
 
 public class Server {
     // Define the JSON_FILE variable
-    private static final String JSON_FILE = "./livros.json";
-    
-    private static JSONParser parser = new JSONParser();
+    private static final String JSON_FILE = "src/livros.json";
 
     public static void main(String[] args) throws ClassNotFoundException {
         String mensagem_enviado_ao_Cliente = "Aguardando conexão com cliente";
@@ -74,19 +72,26 @@ public class Server {
                 }
             }
         } catch (IOException e) {
+            e.printStackTrace();
+            /*
             Type listType = new TypeToken<ArrayList<Livros>>() {
             }.getType();
+            */
         }
     }
 
     private static List<Livros> readBooksFromJson() {
+        JSONParser parser = new JSONParser();
+        
         try (Reader reader = new FileReader(JSON_FILE)) {
             Object obj = parser.parse(reader);
-            
             JSONArray bruteList = (JSONArray) obj;
             List<Livros> refinedList = new ArrayList<>();
             
             bruteList.forEach(livro -> Livros.parseLivro((JSONObject) livro, refinedList));
+            for(Livros livro : refinedList) {
+                System.out.println(livro.getNome());
+            }
             return refinedList;
         } catch (IOException e) {
             e.printStackTrace();
