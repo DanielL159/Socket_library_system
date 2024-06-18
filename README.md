@@ -1,4 +1,4 @@
-# Projeto de Livraria com Modelo Sockets
+# Projeto de Livraria com Sockets
 
 ## Descrição do Projeto
 
