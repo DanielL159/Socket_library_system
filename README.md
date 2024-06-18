@@ -1,4 +1,4 @@
-# Projeto de Livraria com Modelo Cliente-Servidor
+# Projeto de Livraria com Sockets
 
 ## Descrição do Projeto
 
@@ -28,7 +28,7 @@ O servidor é responsável por gerenciar as requisições dos clientes, realizar
 
 Antes de executar a aplicação, certifique-se de ter as seguintes ferramentas instaladas em seu ambiente:
 
-- **JDK 11** ou superior
+- **JDK 17** ou superior
 - **Maven 3.6** ou superior
 - **Spring Boot 2.5** ou superior
 
