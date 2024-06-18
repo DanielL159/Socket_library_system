@@ -58,12 +58,18 @@ O projeto está organizado em módulos separados para o servidor e o cliente, ca
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests. Por favor, siga as boas práticas de desenvolvimento e mantenha a consistência do código.
 
 ---
+## 👨‍💻 Contribuidores
+👏
 
-# # Colaboradores do Projeto
-Abaixo estão os colaboradores que contribuíram para este projeto:
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/DanielL159"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/106317396?v=4" width="100px;"/><br /><sub><b>Daniel Luiz</b></sub></a><br /><a>👨‍💻</a></td>
+    <td align="center"><a href="https://github.com/JooJPaulo"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/108131013?v=4" width="100px;"/><br /><sub><b>João Paulo</b></sub></a><br /><a>👨‍💻</a></td>
+    <td align="center"><a href="https://github.com/juliameireles"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/132387639?v=4" width="100px;"/><br /><sub><b>Julia Meireles</b></sub></a><br /><a>👨‍💻</a></td>
+        <td align="center"><a href="https://github.com/Vilehauk"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/151260459?v=4" width="100px;"/><br /><sub><b>Davi Martins</b></sub></a><br /><a>👨‍💻</a></td>
+  </tr>
+</table>
 
-| [<img src="https://avatars.githubusercontent.com/u/12345678?v=4" width="100px;"/><br /><sub><b>Davi</b></sub>](https://github.com/Vilehauk) | [<img src="https://avatars.githubusercontent.com/u/23456789?v=4" width="100px;"/><br /><sub><b>Júlia</b></sub>](https://github.com/juliameireles) | [<img src="https://avatars.githubusercontent.com/u/34567890?v=4" width="100px;"/><br /><sub><b>João Paulo</b></sub>](https://github.com/JooJPaulo) | [<img src="https://avatars.githubusercontent.com/u/34567890?v=4" width="100px;"/><br /><sub><b>Daniel</b></sub>](https://github.com/DanielL159) |
-| :---: | :---: | :---: |
 
 Obrigado por utilizar a aplicação de Livraria! Esperamos que ela atenda às suas necessidades. 
 
