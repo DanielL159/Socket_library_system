@@ -1,5 +1,3 @@
-Claro! Aqui está o README atualizado com a inclusão da biblioteca `json-simple`.
-
 # Projeto de Livraria com Modelo Cliente-Servidor
 
 ## Descrição do Projeto
