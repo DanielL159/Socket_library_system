@@ -36,7 +36,17 @@ Antes de executar a aplicação, certifique-se de ter as seguintes ferramentas i
 
 ## Como Executar
 
-- É preciso utilizar o frame spring boot e ter o Maven instalado e java instalado
+1.Clone o repositório do projeto: Certifique-se de obter o código-fonte do repositório do projeto para seu ambiente local.
+
+2.Importe o projeto para a sua IDE favorita: Utilize uma IDE compatível com Spring Boot e Maven, como Eclipse, IntelliJ IDEA ou Visual Studio Code (de preferência, use o Eclipse).
+
+3.Compile o projeto: Utilize o Maven para compilar o projeto e resolver todas as dependências necessárias.
+
+4.Execute o servidor: Inicie a aplicação do servidor. O servidor ficará em execução, aguardando conexões dos clientes.
+
+5.Execute o cliente: Inicie a aplicação do cliente e siga as instruções fornecidas para listar, cadastrar, devolver ou alugar livros.
+
+
 
 ## Estrutura do Código
 
