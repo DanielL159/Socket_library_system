@@ -59,4 +59,11 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull re
 
 ---
 
+# # Colaboradores do Projeto
+Abaixo estão os colaboradores que contribuíram para este projeto:
+
+| [<img src="https://avatars.githubusercontent.com/u/12345678?v=4" width="100px;"/><br /><sub><b>Davi</b></sub>](https://github.com/Vilehauk) | [<img src="https://avatars.githubusercontent.com/u/23456789?v=4" width="100px;"/><br /><sub><b>Júlia</b></sub>](https://github.com/juliameireles) | [<img src="https://avatars.githubusercontent.com/u/34567890?v=4" width="100px;"/><br /><sub><b>João Paulo</b></sub>](https://github.com/JooJPaulo) | [<img src="https://avatars.githubusercontent.com/u/34567890?v=4" width="100px;"/><br /><sub><b>Daniel</b></sub>](https://github.com/DanielL159) |
+| :---: | :---: | :---: |
+
 Obrigado por utilizar a aplicação de Livraria! Esperamos que ela atenda às suas necessidades. 
+
