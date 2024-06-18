@@ -59,4 +59,4 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull re
 
 ---
 
-Obrigado por utilizar a aplicação de Livraria! Esperamos que ela atenda às suas necessidades. Se você tiver alguma dúvida ou sugestão, não hesite em nos contatar.
+Obrigado por utilizar a aplicação de Livraria! Esperamos que ela atenda às suas necessidades. 
